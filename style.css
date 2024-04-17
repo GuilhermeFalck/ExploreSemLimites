@@ -1,0 +1,240 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+  font-size: 62.5%;
+  --color-base-purple: #312d64;
+  --color-base-title: #b52184;
+  --color-bg: #f9f4fb;
+}
+
+h1 {
+  color: var(--color-base-title);
+}
+
+body {
+  font-size: 1.6rem;
+  background-color: var(--color-bg);
+  color: var(--color-base-purple);
+  font-family: "Mulish", sans-serif;
+}
+
+.page1 {
+  padding: 0 3.9rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.page1 h1 {
+  font-size: 32;
+  font-weight: 1000;
+}
+
+.page1 h3 {
+  font-size: 20;
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+}
+
+.page1 .buttonDown {
+  padding: 3.5rem 0 9.3rem;
+}
+
+/*Pagina 2*/
+
+.page2 {
+  padding: 5.3rem 3.9rem;
+  background: linear-gradient(90deg, #343193, #302c63);
+  display: flex;
+  flex-direction: column;
+  gap: 5rem;
+}
+
+.page2 .planets {
+  background-color: white;
+  padding: 2.6rem;
+  border-radius: 10%;
+}
+
+.page2 h1 {
+  margin-top: 2rem;
+  font-size: 32;
+  font-weight: 1000;
+  text-align: left;
+}
+
+.page2 p {
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.page2 .text-planets {
+  width: 26.5rem;
+}
+
+/*Pagina 3*/
+
+.page3 {
+  display: flex;
+  justify-content: center;
+  padding: 4.8rem 3.9rem;
+  width: 100vw;
+}
+
+.page3 h1 {
+  margin-bottom: 4.3rem;
+}
+
+.form {
+  width: 100%;
+}
+
+.input {
+  border: var(--color-base-purple) 2px solid;
+  border-radius: 20px;
+
+  display: flex;
+  padding: 1.4rem 1.2rem;
+  gap: 1.2rem;
+}
+
+.form-text {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+}
+
+.input input {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-base-purple);
+  border: none;
+  background-color: var(--color-bg);
+  width: 100%;
+}
+
+.form textarea {
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: var(--color-base-purple);
+  background-color: var(--color-bg);
+  border: var(--color-base-purple) 2px solid;
+  border-radius: 20px;
+  padding: 1.6rem 1.2rem;
+}
+
+.form textarea::placeholder,
+input::placeholder {
+  color: var(--color-base-purple);
+}
+
+.form button {
+  padding: 1.6rem;
+  background-color: var(--color-base-purple);
+  color: white;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 20px;
+  border: none;
+  margin-top: 2.4rem;
+  cursor: pointer;
+  transition: filter 200ms;
+}
+
+.form button:hover {
+  filter: brightness(0.9);
+}
+
+.stars {
+  width: 100%;
+  background-image: url("./assets/stars.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: none;
+}
+
+footer {
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--color-base-purple);
+  text-align: center;
+  height: 7.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-width: 1440px) {
+  /*Pagina 1*/
+  .page1 {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 0 2.9rem 10.3rem 2rem;
+    margin: 0 20rem;
+    max-height: 83.6rem;
+  }
+  .page1 h1 {
+    font-size: 4.5rem;
+    line-height: 7.3rem;
+    margin: 0 0 0.8rem;
+    text-align: left;
+  }
+
+  .page1 h3 {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    text-align: left;
+  }
+
+  .page1 .cta {
+    margin-top: 19.5rem;
+  }
+
+  .page1 .astronaut-img {
+    width: 50rem;
+  }
+
+  .page1 .buttonDown {
+    margin-top: 11rem;
+    text-align: left;
+  }
+
+  /*Pagina2*/
+
+  .page2 {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    padding: 4rem 7rem;
+    justify-content: center;
+    gap: 6rem;
+  }
+
+  /*Pagina3*/
+
+  .page3 {
+    padding: 0;
+  }
+
+  .page3 .form {
+    padding: 6rem 5.7rem 6rem 9rem;
+  }
+
+  .page3 .form h1 {
+    font-size: 4.5rem;
+    margin: 0 0 0.8rem;
+    font-weight: 1000;
+  }
+
+  .stars {
+    display: block;
+  }
+}
